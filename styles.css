@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Basic Resets */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     line-height: 1.5;
 }
 
-/* Header Styles */
+
 header {
     background-color: #1E1E1E;
     color: rgb(249, 250, 249);
@@ -72,17 +72,22 @@ nav a:hover, .resume-button:hover {
     background-color: #45a049;
 }
 
-/* Section Styling */
+
 section {
     padding: 10px 50px;
     margin-top: 60px;
 }
 
-.highlight {
-    color: #39FF14; /* Neon green color */
+section h1 {
+    
+    margin-bottom: 20px;
 }
 
-/* Center Image in About Me Section */
+.highlight, .highlight-quote {
+    color: #39FF14; 
+}
+
+
 .center-image {
     display: flex;
     justify-content: center;
@@ -91,12 +96,12 @@ section {
 }
 
 .center-image img {
-    width: 355px;
+    width: 360px;
     height: 252px;
     border-radius: 20%;
 }
 
-/* Skills Section */
+
 .tech-line {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +117,7 @@ section {
     overflow: hidden;
     border-radius: 10px;
     text-align: right;
-    max-width: 200px; /* Ensure items don't get too large */
+    max-width: 200px; 
 }
 
 .tech-item img {
@@ -147,21 +152,22 @@ section {
 .tech-item:hover .overlay {
     opacity: 1;
 }
+
+
 #projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the project cards */
-    gap: 20px; /* Add some space between project cards */
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 20px; 
 }
 
-/* Project Section Header */
+
 #projects h1 {
-    color: #76B900; /* NVIDIA Green */
+    color: #76B900; 
     text-align: left;
-    margin-left: 0; /* Align to the left */
+    margin-left: 0; 
 }
 
-/* Projects Section */
 .project-card {
     position: relative;
     width: calc(50% - 20px);
@@ -192,24 +198,32 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 #contact h1 {
-    color: #76B900; /* NVIDIA Green */
-    text-align: center;
-    margin-left: 0; /* Align to the left */
+    color: #76B900; 
+    text-align: left;
+    margin-left: 0; 
 }
 
-/* Footer Styles */
+
 footer {
-    background-color: #5ed449;
-    color: #121212;
+    background-color: #1E1E1E;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Media Queries for Responsiveness */
+footer p {
+    margin: 5px 0;
+}
+
+
 @media (max-width: 768px) {
     .tech-item, .project-card {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; 
     }
     nav ul {
         flex-direction: column;
