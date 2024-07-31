@@ -14,7 +14,6 @@ body {
     line-height: 1.5;
 }
 
-/* Header Styles */
 header {
     background-color: #1E1E1E;
     color: rgb(249, 250, 249);
@@ -72,17 +71,17 @@ nav a:hover, .resume-button:hover {
     background-color: #45a049;
 }
 
-/* Section Styling */
+
 section {
     padding: 10px 50px;
     margin-top: 60px;
 }
 
 .highlight {
-    color: #39FF14; /* Neon green color */
+    color: #39FF14; 
 }
 
-/* Center Image in About Me Section */
+
 .center-image {
     display: flex;
     justify-content: center;
@@ -91,12 +90,12 @@ section {
 }
 
 .center-image img {
-    width: 285px;
+    width: 345px;
     height: 252px;
     border-radius: 20%;
 }
 
-/* Skills Section */
+
 .tech-line {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +111,7 @@ section {
     overflow: hidden;
     border-radius: 10px;
     text-align: right;
-    max-width: 200px; /* Ensure items don't get too large */
+    max-width: 200px; 
 }
 
 .tech-item img {
@@ -148,7 +147,7 @@ section {
     opacity: 1;
 }
 
-/* Projects Section */
+
 .project-card {
     position: relative;
     width: calc(50% - 20px);
@@ -180,7 +179,7 @@ section {
     transform: translate(-50%, -50%);
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #5ed449;
     color: #121212;
@@ -188,10 +187,10 @@ footer {
     padding: 20px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
     .tech-item, .project-card {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; 
     }
     nav ul {
         flex-direction: column;
