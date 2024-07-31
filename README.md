@@ -38,9 +38,9 @@ Welcome to my portfolio repository! This project showcases my skills and project
 
 Feel free to reach out to me via email at [saadullahsahi@gmail.com](mailto:saadullahsahi@gmail.com).
 
-## License
+## Notice
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+All content in this repository is my original work and is not licensed for reuse or redistribution. Please do not copy or reproduce any part of this portfolio without my explicit permission.
 
 ---
 
