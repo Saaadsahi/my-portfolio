@@ -146,7 +146,19 @@ section {
 .tech-item:hover .overlay {
     opacity: 1;
 }
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
 
+
+#projects h1 {
+    color: #76B900; 
+    text-align: left;
+    margin-left: 0; 
+}
 
 .project-card {
     position: relative;
