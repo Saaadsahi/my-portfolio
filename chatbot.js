@@ -33,7 +33,7 @@ document.addEventListener("click", function (e) {
         "where have you volunteered": "I have volunteered at MacEwan University's Open House, showcasing projects.",
         "what is your job experience": "I worked as a Security Officer at Pure Casino and now as an Event Assistant at Vibe Parking.",
         "what are your hobbies": "I enjoy exploring new tech, lifting weights, and meeting new people.",
-        "what is your instagram": "My Instagram handle is @saaadsahi.",
+        "what is your instagram handle": "My Instagram handle is @saaadsahi.",
         "what programming languages do you know": "I have experience with Python, SQL, C, C#, Kotlin, and HTML/CSS.",
         "what tools do you use": "I use Tableau, Figma, Adobe XD, Visual Studio, Git, and GitHub.",
         "what operating systems do you know": "I'm proficient with Windows, macOS, and Linux.",
@@ -59,9 +59,6 @@ document.addEventListener("click", function (e) {
         "what is your favorite project": "I love the ETS interactive map project built in Python.",
         "what tools do you use for data visualization": "Tableau is my main data visualization tool.",
         "to know more": "You can email me at saadullahsahi@gmail.com or follow me on Instagram @saaadsahi.",
-        "whats macs": "MacEwan University Computer Science Club",
-        "whats ur role in macs": "I am Vice President External of the club",
-        "hi": "Howdy! What's good?",
       
         "what is your biggest strength": "I adapt quickly and stay curious about emerging technologies.",
         "why do you like python": "Python is versatile, easy to read, and great for data-focused projects.",
@@ -276,6 +273,44 @@ document.addEventListener("click", function (e) {
         "how do you approach planning a big feature": "I break it into smaller milestones and confirm details with stakeholders.",
         "why do you love expanding your knowledge": "Continuous learning keeps me relevant and brings new possibilities.",
         "how do you debug front end code": "I use browser dev tools to inspect elements, watch console logs, and test changes live.",
+        "hello": "Hello! What would you like to know about me?",
+  "how are you": "I'm doing great, thanks for asking! How about you?",
+  "what's up": "Not much! Just here to answer your questions. What's on your mind?",
+  "tell me about yourself": "I’m Saad, a computer science student interested in cyber-physical systems and network security.",
+  "tell me something cool": "I once built a car rental system in C# and SQL that made managing data much easier!",
+  "what do you like to do": "I like lifting weights, exploring new gadgets, and learning about security systems.",
+  "what do you do for fun": "I hang out with friends, go to the gym, or try out new tech projects.",
+  "what is your favorite food": "I enjoy a good steak, but I’m also into trying different cuisines.",
+  "do you like coffee": "Yes, I love coffee—it helps me stay productive!",
+  "do you have pets": "No, I don’t have any pets, but I do like animals.",
+  "what are you working on": "I’m working on improving my skills in network security and learning more about cyber-physical systems.",
+  "can you tell me a joke": "Sure! Why do programmers prefer dark mode? Because light attracts bugs!",
+  "what's your favorite movie": "I enjoy movies with futuristic themes, like *Inception* or *The Matrix*.",
+  "do you like traveling": "Yes, I’d love to visit Japan someday for its tech culture and amazing food.",
+  "where are you from": "I’m originally from Pakistan, but I’m studying in Edmonton, AB, Canada.",
+  "what do you do in your free time": "I lift weights, watch tech videos, or explore new ideas for projects.",
+  "do you play sports": "I enjoy weightlifting and occasionally play basketball.",
+  "what do you like about computer science": "I love solving real-world problems with logical and creative solutions.",
+  "what inspires you": "Seeing how technology can make life easier and more efficient inspires me.",
+  "what’s your favorite music": "I like a mix of genres depending on my mood—usually something upbeat.",
+  "do you have friends": "Of course! I have a great group of friends who support and inspire me.",
+  "can you dance": "Haha, I’m better at coding than dancing, but I can try!",
+  "what’s your favorite holiday": "I enjoy Eid—it’s a great time to spend with family and friends.",
+  "do you like working in teams": "Yes, teamwork helps me learn new perspectives and solve problems faster.",
+  "what is your favorite color": "I love neon green—it’s futuristic and cool.",
+  "what do you like about your studies": "I enjoy learning how systems work and figuring out how to make them more secure.",
+  "what's your biggest achievement": "One of my biggest achievements is developing a secure car rental system database.",
+  "what languages do you speak": "I speak English, and I know some Urdu and Punjabi.",
+  "what’s your favorite programming language": "I like Python for its simplicity and versatility.",
+  "do you like coding": "Yes! It’s challenging but so rewarding when things finally work.",
+  "what motivates you": "The idea of making a real impact with my work motivates me.",
+  "what is your dream job": "My dream job is in network security or cyber-physical systems research.",
+  "do you enjoy teaching": "Yes, teaching helps me share knowledge and learn in the process.",
+  "do you get stressed": "Sometimes, but I handle it by taking short breaks or working out.",
+  "how do you handle failure": "I learn from my mistakes, improve, and try again.",
+  "do you like meeting new people": "Yes, I love connecting with people and learning from their experiences.",
+  "how can i contact you": "You can email me at saadullahsahi@gmail.com or DM me on Instagram @saaadsahi.",
+  "to know more": "Feel free to email me at saadullahsahi@gmail.com or follow me on Instagram @saaadsahi.",
         "do you think soft skills are important": "Yes, they help in teamwork, leadership, and clearer communication.",
         "what is your view on big data analytics": "It offers insights but also demands responsibility in handling data.",
         "how do you manage browser compatibility": "I use polyfills or fallback approaches for older browsers.",
@@ -387,44 +422,6 @@ document.addEventListener("click", function (e) {
         "do you like semantic versioning": "Yes, it makes it clear when breaking changes are introduced.",
         "why do you enjoy database tuning": "Optimizing queries and indexes makes apps run smoothly.",
         "how do you measure user satisfaction": "I use feedback forms, analytics, or direct communication to gauge sentiment.",
-        "hello": "Hello! What would you like to know about me?",
-  "how are you": "I'm doing great, thanks for asking! How about you?",
-  "what's up": "Not much! Just here to answer your questions. What's on your mind?",
-  "tell me about yourself": "I’m Saad, a computer science student interested in cyber-physical systems and network security.",
-  "tell me something cool": "I once built a car rental system in C# and SQL that made managing data much easier!",
-  "what do you like to do": "I like lifting weights, exploring new gadgets, and learning about security systems.",
-  "what do you do for fun": "I hang out with friends, go to the gym, or try out new tech projects.",
-  "what is your favorite food": "I enjoy a good steak, but I’m also into trying different cuisines.",
-  "do you like coffee": "Yes, I love coffee—it helps me stay productive!",
-  "do you have pets": "No, I don’t have any pets, but I do like animals.",
-  "what are you working on": "I’m working on improving my skills in network security and learning more about cyber-physical systems.",
-  "can you tell me a joke": "Sure! Why do programmers prefer dark mode? Because light attracts bugs!",
-  "what's your favorite movie": "I enjoy movies with futuristic themes, like *Inception* or *The Matrix*.",
-  "do you like traveling": "Yes, I’d love to visit Japan someday for its tech culture and amazing food.",
-  "where are you from": "I’m originally from Pakistan, but I’m studying in Edmonton, AB, Canada.",
-  "what do you do in your free time": "I lift weights, watch tech videos, or explore new ideas for projects.",
-  "do you play sports": "I enjoy weightlifting and occasionally play basketball.",
-  "what do you like about computer science": "I love solving real-world problems with logical and creative solutions.",
-  "what inspires you": "Seeing how technology can make life easier and more efficient inspires me.",
-  "what’s your favorite music": "I like a mix of genres depending on my mood—usually something upbeat.",
-  "do you have friends": "Of course! I have a great group of friends who support and inspire me.",
-  "can you dance": "Haha, I’m better at coding than dancing, but I can try!",
-  "what’s your favorite holiday": "I enjoy Eid—it’s a great time to spend with family and friends.",
-  "do you like working in teams": "Yes, teamwork helps me learn new perspectives and solve problems faster.",
-  "what is your favorite color": "I love neon green—it’s futuristic and cool.",
-  "what do you like about your studies": "I enjoy learning how systems work and figuring out how to make them more secure.",
-  "what's your biggest achievement": "One of my biggest achievements is developing a secure car rental system database.",
-  "what languages do you speak": "I speak English, and I know some Urdu and Punjabi.",
-  "what’s your favorite programming language": "I like Python for its simplicity and versatility.",
-  "do you like coding": "Yes! It’s challenging but so rewarding when things finally work.",
-  "what motivates you": "The idea of making a real impact with my work motivates me.",
-  "what is your dream job": "My dream job is in network security or cyber-physical systems research.",
-  "do you enjoy teaching": "Yes, teaching helps me share knowledge and learn in the process.",
-  "do you get stressed": "Sometimes, but I handle it by taking short breaks or working out.",
-  "how do you handle failure": "I learn from my mistakes, improve, and try again.",
-  "do you like meeting new people": "Yes, I love connecting with people and learning from their experiences.",
-  "how can i contact you": "You can email me at saadullahsahi@gmail.com or DM me on Instagram @saaadsahi.",
-  "to know more": "Feel free to email me at saadullahsahi@gmail.com or follow me on Instagram @saaadsahi.",
         "what is your approach to user onboarding": "I provide clear instructions, minimal friction, and a guided first-time experience.",
         "to know more": "You can email me at saadullahsahi@gmail.com or follow me on Instagram @saaadsahi."
       };
@@ -472,8 +469,24 @@ document.addEventListener("click", function (e) {
       }
       if (!found) {
         botReply("To know more email me at saadullahsahi@gmail.com");
-      }}
+      }
+      sendBtn.addEventListener("click", handleUserInput);
+
+      // Trigger when the Enter/Return key is pressed
+      input.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          handleUserInput();
+        }
+      });
     
-    });
+      // Initial greeting message
+      appendMessage(
+        "Hello! Ask me about my work, study, hobbies, or anything about me. I'm still learning, so let's see how I do!",
+        "bot"
+      );
+    
+      // Close chatbot window on X button click
+      closeBtn.addEventListener("click", function () {
+        chatWindow.classList.add("hidden");})});
   });
   
