@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Create a random line
   function createNeonLine(color) {
-    const material = new THREE.LineBasicMaterial({ color: color, linewidth: 2 });
+    const material = new THREE.LineBasicMaterial({ color: color, linewidth: 5 });
     const points = [];
     for (let i = 0; i < 5; i++) {
       points.push(
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Create multiple lines in green/pink
-  const lineCount = 10;
+  const lineCount = 11;
   for (let i = 0; i < lineCount; i++) {
-    const color = i % 2 === 0 ? 0x39ff14 : 0xff1493; // neon green / dark pink
+    const color = i % 2 === 0 ? 0x39ff1 : 0xff1493; // neon green / dark pink
     group.add(createNeonLine(color));
   }
 
