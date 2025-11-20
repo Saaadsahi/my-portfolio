@@ -10,29 +10,67 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!btn || !box || !closeBtn || !sendBtn || !input || !chatArea) return;
 
   /* ---------- FAQ DATA (focused & easy to maintain) ---------- */
+  /* ---------- FAQ DATA (focused & easy to maintain) ---------- */
   const faq = [
+    // --- IDENTITY & BASICS ---
     {
-      keywords: ["who are you", "about you", "about yourself"],
+      keywords: ["who are you", "about you", "about yourself", "intro"],
       answer:
         "I’m Saad Sahi, a full-stack and security-minded developer based in Edmonton, AB. I recently finished my Computer Science degree (with an Econ minor) at MacEwan."
     },
     {
-      keywords: ["what do you study", "degree", "school", "university", "macewan"],
+      keywords: ["hi", "hello", "hey", "greetings", "good morning", "good afternoon", "yo", "sup", "what's up"],
       answer:
-        "I studied Computer Science at MacEwan University with a minor in Economics, focusing on software engineering, databases, and networking."
+        "Hello! I'm here to answer questions about Saad's work, skills, and experience. What would you like to know?"
     },
     {
-      keywords: ["stack", "skills", "what can you do", "technologies"],
+      keywords: ["how are you", "how are u", "how's it going", "how is it going", "how do you do"],
       answer:
-        "My core stack is Python, C / systems, C#, Kotlin, SQL, HTML/CSS, Android Studio, Git, Wireshark, Snort, and RISC-V. Most of the icons you see in the Tech Stack section are tools I’ve actually used in shipped projects."
+        "I'm just a bot, but I'm functioning perfectly! Thanks for asking. How can I help you learn more about Saad?"
     },
     {
-      keywords: ["security", "network", "wireshark", "snort"],
+      keywords: ["resume", "cv", "download"],
+      answer:
+        "You can download my résumé by clicking the 'Download Résumé' button in the top right corner of the navigation bar."
+    },
+
+    // --- EDUCATION & AVAILABILITY ---
+    {
+      keywords: ["what do you study", "degree", "school", "university", "macewan", "education", "gpa"],
+      answer:
+        "I studied Computer Science at MacEwan University with a minor in Economics. I focused on software engineering, databases, and networking, maintaining a strong academic record."
+    },
+    {
+      keywords: ["available", "start date", "when can you start", "notice period"],
+      answer:
+        "I am currently available to start immediately for full-time roles or contract work."
+    },
+    {
+      keywords: ["relocate", "relocation", "remote", "moving"],
+      answer:
+        "I'm based in Edmonton but I am open to relocating for the right opportunity. I'm also fully equipped for remote work."
+    },
+
+    // --- TECH STACK ---
+    {
+      keywords: ["stack", "skills", "what can you do", "technologies", "languages"],
+      answer:
+        "My core stack is Python, C / systems, C#, Kotlin, SQL, HTML/CSS, Android Studio, Git, Wireshark, Snort, and RISC-V. I focus on building reliable, secure systems."
+    },
+    {
+      keywords: ["react", "vue", "angular", "frontend framework", "javascript framework"],
+      answer:
+        "While my current portfolio focuses on vanilla JS and CSS for performance and control, I have experience with modern frontend concepts and can quickly adapt to frameworks like React or Vue."
+    },
+    {
+      keywords: ["security", "network", "wireshark", "snort", "cyber"],
       answer:
         "On the security side, I use Wireshark and Snort for network analysis and intrusion detection. I’m interested in network security auditing, log analysis, and how software behaves in real networks."
     },
+
+    // --- PROJECTS ---
     {
-      keywords: ["projects", "show me your work", "portfolio"],
+      keywords: ["projects", "show me your work", "portfolio", "built"],
       answer:
         "Some key projects: a healthcare recommendation engine for Life Tech Care (WordPress + C#/SQL), an Android tutor scheduling app in Kotlin, a student enrollment data warehouse in C#/SQL, a car rental management system, and a 2D game fully written in C."
     },
@@ -42,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "For Life Tech Care, I built a secure healthcare portal with a quiz-based recommendation engine. It combines custom WordPress features with a C#/SQL Server backend and serves 200+ users."
     },
     {
-      keywords: ["android", "kotlin", "tutor", "scheduling app"],
+      keywords: ["android", "kotlin", "tutor", "scheduling app", "mobile"],
       answer:
         "The tutor scheduling app is built in Android Studio with Kotlin and SQL. It includes secure login, booking, chat, and schedule views for students and tutors."
     },
@@ -52,22 +90,36 @@ document.addEventListener("DOMContentLoaded", () => {
         "The car rental system is a C#/SQL backend with ASP.NET. I worked on schema design, performance improvements, and testing to keep core booking and billing flows stable."
     },
     {
-      keywords: ["experience", "work", "jobs"],
+      keywords: ["game", "c game", "2d game"],
+      answer:
+        "I built a 3-level 2D game entirely in C to practice low-level memory management, collision detection, and game loop architecture without relying on heavy engines."
+    },
+
+    // --- EXPERIENCE & SOFT SKILLS ---
+    {
+      keywords: ["experience", "work", "jobs", "history"],
       answer:
         "I’ve done freelance dev work (Life Tech Care), served as Vice President External of the MacEwan CS Club, contributed to a car rental platform, and built a prize-winning Flask calendar app at a MacEwan hackathon."
     },
     {
-      keywords: ["vice president", "vpexternal", "macs", "cs club"],
+      keywords: ["vice president", "vpexternal", "macs", "cs club", "leadership"],
       answer:
         "As Vice President External of the MacEwan CS Club, I organized 15+ tech events, connected students with industry, and helped grow engagement by around 35%."
     },
     {
-      keywords: ["contact", "email", "reach you", "talk"],
+      keywords: ["soft skills", "strengths", "teamwork", "communication"],
+      answer:
+        "I pride myself on clear communication (honed through my VP role), reliability, and a 'no-ego' approach to debugging and problem-solving. I enjoy bridging the gap between technical and non-technical stakeholders."
+    },
+
+    // --- CONTACT & SOCIALS ---
+    {
+      keywords: ["contact", "email", "reach you", "talk", "phone"],
       answer:
         "You can email me at saadullahsahi@gmail.com or call/text me at +1 (587) 987-0039. I’m always open to chatting about roles, projects, or collaborations."
     },
     {
-      keywords: ["location", "where are you"],
+      keywords: ["location", "where are you", "city"],
       answer:
         "I’m based in Edmonton, Alberta, Canada – open to local roles and remote opportunities."
     },
@@ -86,10 +138,17 @@ document.addEventListener("DOMContentLoaded", () => {
       answer:
         "On Instagram I’m @saaadsahi – more personal, but feel free to connect there too."
     },
+
+    // --- MISC ---
     {
-      keywords: ["future plans", "dream job", "goal"],
+      keywords: ["future plans", "dream job", "goal", "looking for"],
       answer:
         "I’m aiming for roles that mix full-stack development with security and systems thinking – places where I can design, build, and harden real products."
+    },
+    {
+      keywords: ["joke", "funny"],
+      answer:
+        "Why do programmers prefer dark mode? Because light attracts bugs. (I know, classic.)"
     }
   ];
 
@@ -178,6 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initial greeting – asks a question first
   botReply(
-    "Hey, I’m Saad’s mini-bot. Before I answer anything, what are you most curious about: my tech stack, specific projects, or work experience?"
+    "Hey, I’m Saad’s mini-bot. I can help you answer information abouut him, you can contact send him an email for more questions."
   );
 });
