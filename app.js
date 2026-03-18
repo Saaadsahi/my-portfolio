@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     group.classList.add("stagger-group");
   });
 
-  document.querySelectorAll(".hero-image-frame, .theme-toggle-track, .card-badge, .project-status").forEach((element, index) => {
+  document.querySelectorAll(".hero-image-frame, .card-badge, .project-status").forEach((element, index) => {
     element.style.setProperty("--float-duration", `${8 + (index % 5) * 1.25}s`);
     element.setAttribute("data-float", "");
   });
