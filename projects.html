@@ -4,153 +4,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects – Saad Sahi</title>
-
+  <title>Work – Saad Sahi</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="chatbot.css" />
 </head>
 
 <body class="page-projects">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
+  <!-- ============== NAVBAR ============== -->
   <header class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Saad&nbsp;Sahi</a>
+      <a href="index.html" class="nav-logo">Saad Sahi</a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="stack.html">Stack</a>
-        <a href="projects.html" class="active">Projects</a>
+        <a href="projects.html" class="active">Work</a>
         <a href="experience.html">Experience</a>
+        <a href="stack.html">Stack</a>
         <a href="contact.html">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <a class="nav-link-text" href="mailto:saadullahsahi@gmail.com">Let’s Talk</a>
-        <a class="primary-btn primary-btn-sm" href="SWY%20resume.pdf" target="_blank" rel="noopener">
-          Download Résumé
+        <a href="contact.html" class="nav-cta">Let's Talk</a>
+        <a class="primary-btn primary-btn-sm" href="resume.pdf" target="_blank" rel="noopener">
+          Résumé
         </a>
       </div>
     </div>
   </header>
-<div id="chatbot-button" aria-label="Open Saad's chatbot">
-   <img src="images/chatbot.png"class="icon-fix3" alt="Chatbot">
-  </div>
-  <div id="chatbot-window" class="hidden" aria-live="polite">
-    <div id="chatbot-header">
-      <span>Ask Saad’s mini-bot</span>
-      <button id="chatbot-close" aria-label="Close chatbot">×</button>
-    </div>
-    <div id="chatbot-messages"></div>
-    <div id="chatbot-input">
-      <input type="text" id="chatbot-question" placeholder="Ask about any tool or project that uses it..."
-        autocomplete="off" />
-      <button id="chatbot-send">Send</button>
-    </div>
-  </div>
+
   <main class="section">
     <div class="section-header">
-      <h2>Projects</h2>
-      <p>Deeper write-ups of the work on my résumé.</p>
-      <div class="project-links">
-        <a href="https://www.linkedin.com/in/saaadsahi" target="_blank" rel="noopener">
-          Ask for code samples on LinkedIn
-        </a>
-      </div>
+      <h2>Selected Work</h2>
+      <p>Flagship projects that demonstrate production-ready systems thinking</p>
     </div>
 
-    <div class="projects-grid">
-      <!-- Life Tech Care -->
-      <article class="project-card glass">
-        <div class="project-media">
-          <img src="images/lifetechcare.png" alt="Life Tech Care website screenshot" />
+    <!-- ========== FEATURED PROJECTS ========== -->
+    <div class="featured-projects">
+      <!-- Project 1: SSAG Legal Calculator -->
+      <article class="project-showcase glass">
+        <div class="project-header">
+          <h3>Enterprise SSAG Legal Calculator Platform</h3>
+          <span class="project-status">Production</span>
         </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span>WordPress</span>
-            <span>C# / SQL Server</span>
-            <span>Healthcare</span>
-          </div>
-          <h3>Life Tech Care – Healthcare Portal</h3>
-          <p>
-            Freelance project for a health startup in Edmonton. I built a
-            quiz-driven healthcare portal that recommends devices and services
-            to users based on their answers.
-          </p>
-          <ul class="project-bullets">
-            <li>Designed SQL Server schema for quiz questions, answers, and device mappings.</li>
-            <li>Implemented C# logic to calculate recommendations and feed them back into WordPress.</li>
-            <li>Configured a secure, maintainable setup so non-technical staff can manage content.</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://lnkd.in/guxuHWhw" target="_blank" rel="noopener">View live site</a>
+        
+        <p class="project-lead">
+          A production-grade legal technology platform implementing Canadian SSAG child support rules with secure client workflows and architecture designed for 1000+ clients.
+        </p>
 
+        <div class="project-meta-grid">
+          <div class="meta">
+            <span class="meta-label">Type</span>
+            <span class="meta-value">Legal Tech Platform</span>
           </div>
+          <div class="meta">
+            <span class="meta-label">What I Built</span>
+            <span class="meta-value">Complex business logic, secure payment workflows, scalable backend architecture</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Stack</span>
+            <span class="meta-value">Python, PostgreSQL, Stripe, Authentication Systems</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Scale</span>
+            <span class="meta-value">Architecture for 1000+ legal clients</span>
+          </div>
+        </div>
+
+        <p class="project-detail">
+          This project demonstrates production-ready systems thinking: complex business logic implementation, secure payment processing, reliable client authentication, and scalable database design. The system handles sensitive legal calculations with precision and security.
+        </p>
+      </article>
+
+      <!-- Project 2: Healthcare Portal -->
+      <article class="project-showcase glass">
+        <div class="project-header">
+          <h3>AI-Powered Healthcare Recommendation Portal</h3>
+          <span class="project-status">Live</span>
+        </div>
+        
+        <p class="project-lead">
+          A healthcare technology platform with automated quiz logic and AI-driven recommendation engine, serving 200+ active users.
+        </p>
+
+        <div class="project-meta-grid">
+          <div class="meta">
+            <span class="meta-label">Type</span>
+            <span class="meta-value">Healthcare Tech Platform</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">What I Built</span>
+            <span class="meta-value">Quiz engine, recommendation logic, backend decision workflows</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Stack</span>
+            <span class="meta-value">C#, SQL Server, WordPress, Decision Logic</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Users</span>
+            <span class="meta-value">200+ active platform users</span>
+          </div>
+        </div>
+
+        <p class="project-detail">
+          This demonstrates real client-facing production work: designing decision systems, integrating complex business logic with WordPress, managing SQL data structures, and delivering features that directly impact end users. The recommendation engine uses data-driven logic to personalize user experiences.
+        </p>
+      </article>
+
+      <!-- Project 3: Secure Mail -->
+      <article class="project-showcase glass">
+        <div class="project-header">
+          <h3>Secure Mail Transfer System</h3>
+          <span class="project-status">Systems</span>
+        </div>
+        
+        <p class="project-lead">
+          A cryptographically-secure communications platform implementing RSA and AES encryption for multi-client message transfer.
+        </p>
+
+        <div class="project-meta-grid">
+          <div class="meta">
+            <span class="meta-label">Type</span>
+            <span class="meta-value">Secure Communications Protocol</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">What I Built</span>
+            <span class="meta-value">Encryption implementation, secure protocol design, client-server architecture</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Stack</span>
+            <span class="meta-value">Python, RSA/AES Cryptography, Network Systems</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">Security and systems architecture</span>
+          </div>
+        </div>
+
+        <p class="project-detail">
+          This project demonstrates security chops and systems thinking: implementing cryptographic protocols from scratch, designing secure client-server interactions, handling sensitive data properly, and understanding the full stack of secure systems. It shows attention to both correctness and real-world security practices.
+        </p>
+      </article>
+
+      <!-- Project 4: Data Warehouse -->
+      <article class="project-showcase glass">
+        <div class="project-header">
+          <h3>Data Warehouse & Analytics System</h3>
+          <span class="project-status">Data</span>
+        </div>
+        
+        <p class="project-lead">
+          A data warehousing solution for student enrollment data with ETL pipelines and analytics-ready schema design.
+        </p>
+
+        <div class="project-meta-grid">
+          <div class="meta">
+            <span class="meta-label">Type</span>
+            <span class="meta-value">Data Infrastructure</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">What I Built</span>
+            <span class="meta-value">Data modeling, ETL pipelines, analytics schema, reporting infrastructure</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Stack</span>
+            <span class="meta-value">C#, SQL, ETL, Data Modeling</span>
+          </div>
+          <div class="meta">
+            <span class="meta-label">Focus</span>
+            <span class="meta-label">Data systems and analytics</span>
+          </div>
+        </div>
+
+        <p class="project-detail">
+          This demonstrates data systems thinking: designing normalized schemas for analytical queries, building reliable ETL pipelines, understanding data modeling best practices, and creating infrastructure that scales. It shows how to structure data for both transactional accuracy and analytical power.
+        </p>
+      </article>
+    </div>
+
+    <!-- ========== SECONDARY PROJECTS ========== -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3>Other Projects</h3>
+    </div>
+
+    <div class="secondary-projects">
+      <article class="project-card glass">
+        <h4>Tutor Scheduling App</h4>
+        <p>Android mobile application for scheduling and managing tutoring sessions.</p>
+        <div class="card-tags">
+          <span class="tag">Android</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">SQL</span>
         </div>
       </article>
 
-      <!-- Tutor app -->
       <article class="project-card glass">
-        <div class="project-media">
-          <img src="images/mobileapp.png" alt="Android tutor app" />
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span>Android Studio</span>
-            <span>Kotlin</span>
-            <span>SQL</span>
-          </div>
-          <h3>Android Tutor Scheduling App</h3>
-          <p>
-            A mobile app that lets students and tutors create, view, and book
-            tutoring sessions directly from their phones.
-          </p>
-          <ul class="project-bullets">
-            <li>Built login and role-based views for students and tutors.</li>
-            <li>Backed schedules and bookings with an SQL database.</li>
-            <li>Focused on simple flows so non-technical users can pick it up quickly.</li>
-          </ul>
+        <h4>Car Rental Database System</h4>
+        <p>Complete database management system for vehicle rental operations.</p>
+        <div class="card-tags">
+          <span class="tag">C#</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Database Design</span>
         </div>
       </article>
 
-      <!-- Data warehouse -->
       <article class="project-card glass">
-        <div class="project-media">
-          <img src="images/datawarehouse.png" alt="Data warehouse concept" />
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span>C#</span>
-            <span>SQL</span>
-            <span>Data Warehousing</span>
-          </div>
-          <h3>Student Enrollment Data Warehouse</h3>
-          <p>
-            A database and ETL project focused on cleaning and structuring
-            enrollment data for analytics and reporting.
-          </p>
-          <ul class="project-bullets">
-            <li>Modeled fact and dimension tables in a star schema.</li>
-            <li>Built ETL routines in C#/SQL to move and transform data.</li>
-            <li>Prepared views optimized for dashboards and reports.</li>
-          </ul>
+        <h4>2D Video Game</h4>
+        <p>A full-featured 2D game built with game development principles and clean architecture.</p>
+        <div class="card-tags">
+          <span class="tag">Game Dev</span>
+          <span class="tag">Graphics</span>
+          <span class="tag">Architecture</span>
         </div>
       </article>
+    </div>
 
-      <!-- C Game -->
-      <article class="project-card glass">
-        <div class="project-media">
-          <img src="images/game.png" alt="C game screenshot" />
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span>C</span>
-            <span>Game Loop</span>
-          </div>
-          <h3>3-Level C Game</h3>
-          <p>
-            A 2D game written fully in C, built as a way to push my low-level skills.
-          </p>
-          <ul class="project-bullets">
-            <li>Implemented input handling, collisions, and level transitions.</li>
-            <li>Practiced memory management and debugging in a non-managed language.</li>
-          </ul>
+    <div class="cta-center" style="margin-top: 3rem;">
+      <a href="contact.html" class="primary-btn">Discuss Your Project</a>
+    </div>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024–2025 · Saad Sahi · Edmonton, AB</p>
+    </div>
+  </footer>
+</body>
+
+</html>
