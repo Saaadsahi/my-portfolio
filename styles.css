@@ -420,16 +420,39 @@ body[data-theme="light"] .theme-toggle-thumb {
 .hero-label {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.75rem;
   width: fit-content;
   margin-bottom: 1.25rem;
+}
+
+.hero-availability,
+.hero-role {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
   padding: 0.55rem 1rem;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero-availability {
+  gap: 0.65rem;
+  background: rgba(14, 185, 129, 0.12);
+  color: #b8f5d7;
+  border-color: rgba(16, 185, 129, 0.28);
+}
+
+body[data-theme="light"] .hero-availability {
+  background: rgba(15, 174, 133, 0.1);
+  color: #0d7d62;
+}
+
+.hero-role {
   background: rgba(255, 255, 255, 0.06);
   color: var(--muted-strong);
-  font-weight: 700;
-  font-size: 0.85rem;
 }
 
 .hero-status {
